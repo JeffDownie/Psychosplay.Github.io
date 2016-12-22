@@ -1,8 +1,12 @@
-* { 
+body {
+    font-size: 14px;
+    font-family: "Libre Franklin", Calibri, Arial, Helvetica;
+    font-weight: 400;
+}
+
+    * { 
 	margin: 0;
 	padding: 0;
-	font-size: 14px;
-	font-family: Calibri, Arial, Helvetica;
 }
 
 h1 {
@@ -10,16 +14,7 @@ h1 {
 	font-size: 16px;
 }
 
-h2 {
-	padding: 0px;
-	font-size: 14px;
-}
 
-p {
-	padding: 10px;
-	font-size: 30px;
-	color: #FF0000;
-}
 #meditation {
 	font-size: 24px;
 	color: green;
@@ -54,7 +49,11 @@ table#Iron , table#Iron  th  {
  }
  
  .swMain {
-	visibility: visible
+	visibility: visible;
+ }
+
+ tr.swMain td {
+    border-bottom: 1px solid silver;
  }
  
  .swHide {
@@ -150,4 +149,108 @@ ul.tab li a:focus, .active {background-color: #ccc;}
   flex: 0 0 28em;
 }
 
+table {
+    border-collapse: collapse;
+}
 
+td {
+    border: 1px solid #999;
+    padding: 0.25rem;
+    text-align: left;
+    font-size: .875em
+}
+
+th {
+    font-weight: 700;
+    font-size: 1.75em;
+}
+
+tr.swMain td:nth-child(3), tr.swMain td:nth-child(4)  {
+    text-align: center;
+}
+
+/* Backgrounds */
+
+.resIron, tr#IronResource td, tr#RefIronResource td, tr#MotorResource td, tr#CarResource td, tr#PlaneResource td {
+    background-color: #f6f6f6;
+}
+
+.resCoal, tr#CoalResource td, tr#SteelResource td, tr#MechPartResource td, tr#ACResource td {
+    background-color: #e2e2e2;
+}
+
+.resCopper, tr#CopperResource td, tr#SpoolResource td, tr#RefCopperResource td, tr#ElectronicResource td {
+    background-color: #efe6de;
+}
+
+.resOil, tr#OilResource td, tr#GasResource td, tr#PlasticResource td {
+    background-color: #d1c5ba;
+}
+
+.resSand, tr#SandResource td, tr#GlassResource td, tr#LightbulbResource td {
+    background-color: #d0dfe2;
+}
+
+.resPower {
+    background-color: #f4f3e3;
+}
+
+.resMoney {
+    background-color: #dfedde;
+    color: #516b51;
+}
+
+/* Dividers */
+
+.divider {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid silver;
+    margin: 1em 0; 
+    clear: both;
+}
+
+/* Unit Cards */
+
+    table.unitCard {
+        border-collapse: collapse;
+        width: 45%;
+        float: left;
+        margin-right: 2%;
+        margin-bottom: 2%;
+    }
+
+    table.unitCard h2 {
+        font-size: .75em;
+        text-align: left;
+    }
+
+    table.unitCard td {
+        position: relative;
+        border: 1px solid #666;
+        padding: .5em;
+    }
+
+    table.unitCard td p {
+        margin: 1em 0 0 0;
+    }
+
+    table.unitCard td p.info {
+        position: absolute;
+        padding: .325em;
+        background: #666;
+        color: white;
+        font-size: .625em;
+        font-weight: 700;
+        top:0;
+        left:0;
+        margin: 0;
+    }
+
+/* Resources */
+
+.resource {
+    padding: .25em;
+    border-radius: 3px;
+    border: 1px solid silver;
+}
